@@ -1,0 +1,13 @@
+{{#each errors}}
+  <div class="alert alert-danger">{{text}}</div>
+{{else}}
+{{/each}}
+
+<div class="card card-body">
+  <h3>Blog</h3>
+   <div class="blog">
+                <h1 class="blogheading">{{blog.title}}</h1>
+                <small>By :{{blog.user}}</small>
+                <p>{{blog.details}}</p>
+    </div>
+  

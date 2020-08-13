@@ -1,0 +1,22 @@
+ <div class="card-deck ml-4">
+         
+ {{#each blogs}}
+           <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                  
+            <div class="card" style="width: 18rem; text-align: center;">
+                <div class="card-body">
+                  <h5 class="card-title">{{title}}</h5>
+                  <p class="card-text"> By: {{user}}</p>
+                  <p class="card-text">{{subtext}}</p>
+                  <a href="/blogs/read/{{title}}" class="btn btn-dark">Read more</a>
+                </div>
+               </div>
+            </div> 
+           
+            </div>
+
+             {{else}}
+  <p>No blogs listed</p>
+{{/each}}
+        </div>
