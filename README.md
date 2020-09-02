@@ -1,5 +1,5 @@
 
-# Nodejs-TodoApp
+# Nodejs-BlogApp
 It is a Nodejs Blog App , where a user can post their blogs and view others' blogs . 
 
 # Dependecies 
