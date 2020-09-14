@@ -72,12 +72,17 @@ app.use(function(req, res, next) {
   next();
 })
 
+// home page 
 app.get('/', (req, res) => {
     const title='Welcome to BlogApp';
     res.render('index', {
        title: title
    });
 });
+
+app.get('/contact', (req , res) =>{
+  res.render('contact');
+})
 
 
 

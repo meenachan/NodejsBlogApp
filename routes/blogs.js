@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
+//load helpers 
 const {ensureAuthenticated} = require('../helpers/auth');
 
-// load helper
+
 
 
 // load schema
@@ -60,6 +61,10 @@ router.get('/edit/:user', ensureAuthenticated, (req,res) => {
        blog: blog
      });
    }; 
+  })
+  .catch(err =>{
+    req.flash('error_msg', 'Something went wrong !');
+    res.redirect('/blogs');
   })
 });
 

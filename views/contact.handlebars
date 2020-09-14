@@ -1,0 +1,33 @@
+
+<form  class="contact-body" action="https://formspree.io/xpzydaap" method="POST">
+    <div class="contact-container">
+        <div class="contact-head">
+            <p>Contact</p>
+        </div>
+        <div class="name-input">
+            <label class="name">Name</label>
+            <div class="input-group flex-nowrap">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                </div>
+                <input type="text" name="name" id="contact-name" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" required>
+              </div>
+        </div>
+        <div class="email-input">
+            <label class="name"> Email</label>
+            <div class="input-group flex-nowrap">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="addon-wrapping">email</span>
+                </div>
+                <input type="email" name="_replyto" id="contact-name" class="form-control" placeholder="email" aria-label="enail" aria-describedby="addon-wrapping" required>
+              </div>
+        </div>
+        <div class="message">
+            <label class="name">Message</label>
+                <textarea  name="meesage"  class="form-control" id="message-text" placeholder="message" aria-label="message" aria-describedby="addon-wrapping" required> </textarea>
+              </div>
+            <div class="status"> <p id="error"></p></div>
+              <button type="submit"  class="btn btn-danger submit btn-lg btn-block">Send</button>    
+    </div>
+
+</form>

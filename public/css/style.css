@@ -68,3 +68,17 @@
     background-color: #fcf8f9 !important
 }
 
+.card-footer{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 71vw;
+    border : none;
+    border-radius: 5%;
+    text-align: center;
+}
+.card-footer a{
+    text-decoration: none;
+    color :red;
+    text-align: center;
+}
